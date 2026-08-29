@@ -1,0 +1,34 @@
+# ============================================
+# JSON to RSS 配置文件
+# 每个 [[source]] 块代表一个数据源，可自由添加多个
+# ============================================
+
+[[source]]
+id = "bjnews_culture"
+title = "新京报文化"
+url = "https://m.bjnews.com.cn/bwnew/index-tj?page=1&size=20&channel_id=7&wz_id=1"
+# JSON 响应中文章列表的路径（用 . 表示嵌套，直接是数组则填 "data"）
+itemsPath = "data"
+# 每条文章的字段映射（支持 "a.b.c" 嵌套路径）
+itemTitle = "title"
+itemLink = "detail_url.m_url"
+itemDate = "publish_time"
+itemDesc = "desc"
+# 可选：自定义请求头（不填则使用默认头）
+[source.headers]
+Referer = "https://m.bjnews.com.cn/"
+
+# ============================================
+# 添加新数据源示例（取消注释并修改即可）
+# ============================================
+# [[source]]
+# id = "another_source"
+# title = "另一个来源"
+# url = "https://example.com/api/articles"
+# itemsPath = "result.articles"
+# itemTitle = "name"
+# itemLink = "url"
+# itemDate = "created_at"
+# itemDesc = "content"
+# [source.headers]
+# Referer = "https://example.com/"

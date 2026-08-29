@@ -1,0 +1,13 @@
+{
+  "name": "json-to-rss",
+  "version": "1.0.0",
+  "description": "将 JSON API 数据转换为 RSS 订阅源，支持多数据源配置，通过 GitHub Actions 自动部署",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js"
+  },
+  "dependencies": {
+    "toml": "^3.0.0"
+  },
+  "license": "MIT"
+}
