@@ -44,7 +44,7 @@ function generateRSS(source, items) {
     return `    <item>
       <title>${title}</title>
       
-      <guid>${link}</guid>
+      <link>${link}</link>
       <description>${desc}</description>
       <pubDate>${pubDate}</pubDate>
     </item>`;
