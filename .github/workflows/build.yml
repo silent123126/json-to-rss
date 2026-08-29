@@ -3,7 +3,7 @@ name: Build RSS Feeds
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # 每2小时执行一次
+    - cron: '30 8 * * *'
   workflow_dispatch:        # 支持手动触发
   push:
     branches: [main]
